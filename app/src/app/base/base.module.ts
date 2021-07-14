@@ -2,15 +2,22 @@ import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { 
   HeaderComponent,
-  FooterComponent 
+  FooterComponent,
+  OfferListationComponent,
+  ContactComponent,
+  HomeIntroComponent, 
+  LocationComponent,
+  NavComponent
 } from './components';
 import {
   HomeComponent
 } from './pages';
-import { OfferListationComponent } from './components/offer-listation/offer-listation.component';
-import { ContactComponent } from './components/contact/contact.component';
-import { HomeIntroComponent } from './components/home-intro/home-intro.component';
-
+import {
+  InformationService,
+  NavigatorService,
+  IntroService,
+  OfferService
+} from './services';
 
 @NgModule({
   declarations: [
@@ -19,13 +26,21 @@ import { HomeIntroComponent } from './components/home-intro/home-intro.component
     HomeComponent,
     OfferListationComponent,
     ContactComponent,
-    HomeIntroComponent
+    HomeIntroComponent,
+    LocationComponent,
+    NavComponent
   ],
   imports: [
     CommonModule
   ],
   exports: [
     HomeComponent
+  ],
+  providers: [
+    InformationService,
+    NavigatorService,
+    OfferService,
+    IntroService
   ]
 })
 export class BaseModule { }

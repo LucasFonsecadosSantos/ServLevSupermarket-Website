@@ -10,9 +10,9 @@ import banners from '../../../assets/data/banners.json';
 })
 export class IntroService {
 
-  constructor(private http: HttpClient) { }
+  constructor() { }
 
-  public all(): Banner[] {
+  public all(): {} {
 
     //return this.http.get<Banner[]>(route);
 

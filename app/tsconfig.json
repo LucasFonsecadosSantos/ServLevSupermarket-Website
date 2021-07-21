@@ -16,6 +16,8 @@
     "importHelpers": true,
     "target": "es2017",
     "module": "es2020",
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
     "lib": [
       "es2018",
       "dom"
@@ -23,7 +25,7 @@
   },
   "angularCompilerOptions": {
     "enableI18nLegacyMessageIdFormat": false,
-    "strictInjectionParameters": true,
+    "strictIn ectionParameters": true,
     "strictInputAccessModifiers": true,
     "strictTemplates": true
   }

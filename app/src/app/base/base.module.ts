@@ -1,12 +1,12 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HttpClient } from '@angular/common/http';
-import { 
+import {
   HeaderComponent,
   FooterComponent,
   OfferListationComponent,
   ContactComponent,
-  HomeIntroComponent, 
+  HomeIntroComponent,
   LocationComponent,
   NavComponent
 } from './components';
@@ -19,6 +19,7 @@ import {
   IntroService,
   OfferService
 } from './services';
+import { CustomContainerDirective } from './directivies';
 
 @NgModule({
   declarations: [
@@ -29,7 +30,8 @@ import {
     ContactComponent,
     HomeIntroComponent,
     LocationComponent,
-    NavComponent
+    NavComponent,
+    CustomContainerDirective
   ],
   imports: [
     CommonModule

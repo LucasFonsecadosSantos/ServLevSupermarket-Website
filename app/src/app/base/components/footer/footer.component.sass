@@ -19,14 +19,49 @@
         color: lighten(#333, 20%)
         &::first-letter
           text-transform: uppercase
+        &:last-child
+          padding-bottom: 0px !important
 
-  .footer__payment-container,
-  .footer__copyright-container,
+  .footer__payment-container
+    .payment-container__payment-way
+      height: 40px
+      width: 80px
+      background: #f00
+    span.payment-container_title
+      display: flex
+      padding-top: 1rem
+      padding-bottom: 1rem
+      justify-content: left
+      font:
+        family: 'Raleway', sans-serif
+        weight: 600
+        size: 1.1rem
+      color: #E74C3C
+  .footer__copyright-container
+    display: flex
+    align-items: center
+    border:
+      top: solid 1px lighten(#333, 50%)
+    span
+      font:
+        family: 'Roboto', sans-serif
+        size: .8rem
+        weight: 300
+      //color: lighten(#333, 50%)
+      color: #333
   .footer__info-container
-
-
-
-.footer__banner-container
+    text-align: center
+    align-items: center
+    border:
+      top: solid 1px lighten(#333, 50%)
+    span
+      justify-content: center
+      font:
+        family: 'Roboto', sans-serif
+        size: .6rem
+        weight: 300
+      //color: lighten(#333, 50%)
+      color: #333
 
 .footer__sitemap-container
   span.banner-container_title
